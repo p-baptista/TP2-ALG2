@@ -77,6 +77,3 @@ class Branch_And_Bound:
 
         print(f"Branch-and-Bound total weight: {self.best_solution}")
         print(f"Branch-and-Bound total time: {time.time() - start_time}")
-
-
-        print()
