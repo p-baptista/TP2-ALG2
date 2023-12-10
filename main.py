@@ -2,8 +2,6 @@ from tools.branch_and_bound import Branch_And_Bound
 from tools.twice_around_tree import Twice_Around_Tree
 from tools.christofides import Christofides
 
-# http://comopt.ifi.uni-heidelberg.de/software/TSPLIB95/tsp/
-
 def euclidian_distance(x1, y1, x2, y2):
     xd = x1 - x2
     yd = y1 - y2
@@ -37,5 +35,5 @@ tat.run_tat()
 chr = Christofides(len(adj), adj)
 chr.run_christofides()
 
-# bnb = Branch_And_Bound(adj)
-# bnb.run_bnb()
+bnb = Branch_And_Bound(adj)
+bnb.run_bnb()
